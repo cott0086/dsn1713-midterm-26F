@@ -2,7 +2,47 @@
 
 /* Set custom variables here */
 
+:root {
+  --bs-body-bg: #fbf8f4;
+  --bs-primary: #2e5440;
+  --bs-primary-rgb: 46, 84, 64;
+  --bs-light: #f6f3ed;
+  --bs-light-rgb: 246, 243, 237;
+  --bs-dark: #243a2f;
+  --bs-dark-rgb: 36, 58, 47;
+  --bs-body-color: #191b1c;
+  --bs-body-font-family: "sarala", sans-serif;
+  --bs-body-font-size: 1rem;
 
+  --font-heading-family: "merriweather", serif;
+  --font-hero: 2rem;
+  --font-heading: 2rem;
+  --font-subheading: 1.5rem;
+  --font-intro: 1.3rem;
+  --font-testimonial: 1.3rem;
+  --section-title-spacing: 55px;
+  --hero-bg: #e4e6bd;
+}
+
+.btn-primary {
+  --bs-btn-color: var(--bs-light);
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: var(--bs-light);
+  --bs-btn-hover-bg: var(--bs-dark);
+  --bs-btn-hover-border-color: var(--bs-dark);
+  --bs-btn-active-bg: var(--bs-dark);
+  --bs-btn-active-color: var(--bs-light);
+  --bs-btn-active-border-color: var(--bs-dark);
+}
+
+.section-intro {
+  font-size: var(--font-intro);
+  line-height: 1.6;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
@@ -10,25 +50,47 @@
   color: #F6F3ED;
 }
 
+
+
+
 body {
-  font-family: "Sarala", sans-serif;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  color: var(--bs-body-color);
 }
 
 h1, h2, h3 {
-  font-family: "Merriweather", serif;
+  font-family: var(--font-heading-family );
 }
 
 #hero {
   height: 800px;
-  background-color: #E4E6DB;
+  background-color: var(--hero-bg);
   background-image: url(../images/hero-bg-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+#hero h1 {
+  font-size: var(--font-hero);
+}
+
 #hero .d-flex {
   height: 800px;
+}
+
+.how-it-works {
+  margin-bottom: 60px;
+  line-height: 1.5;
+}
+.how-it-works-subsection {
+  margin-bottom: 50px;
+}
+
+
+.reviews {
+  background-color: var(--bs-primary);
 }
 
 #cta {
